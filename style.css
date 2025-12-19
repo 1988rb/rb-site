@@ -26,7 +26,7 @@ h1, h2, h3 {
 
 /* Hero */
 .hero {
-  height: 55vh;
+  height: 30vh;
   min-height: 360px;
   background: linear-gradient(135deg, var(--brand), var(--brand-dark));
   color: #fff;
