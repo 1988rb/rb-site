@@ -1,3 +1,6 @@
+/* Import body font */
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600&display=swap');
+
 :root {
   --brand: maroon;
   --brand-dark: #5a0000;
@@ -5,17 +8,26 @@
   --text: #222;
 }
 
+/* Base */
 body {
   margin: 0;
-  font-family: "Segoe UI", Arial, sans-serif;
+  font-family: 'Source Sans Pro', 'Segoe UI', Arial, sans-serif;
   color: var(--text);
-  line-height: 1.7;
+  line-height: 1.8;
   background: #fff;
+  font-size: 18px;
 }
 
-/* Hero with gradient */
+/* Headings use Georgia */
+h1, h2, h3 {
+  font-family: Georgia, 'Times New Roman', serif;
+  letter-spacing: 0.3px;
+}
+
+/* Hero */
 .hero {
-  height: 80vh;
+  height: 55vh;
+  min-height: 360px;
   background: linear-gradient(135deg, var(--brand), var(--brand-dark));
   color: #fff;
   display: flex;
@@ -27,13 +39,14 @@ body {
 }
 
 .hero h1 {
-  font-size: 64px;
-  margin-bottom: 10px;
+  font-size: 56px;
+  margin-bottom: 12px;
 }
 
 .hero p {
-  font-size: 22px;
-  max-width: 720px;
+  font-size: 21px;
+  max-width: 680px;
+  font-weight: 400;
 }
 
 /* Sections */
@@ -49,13 +62,14 @@ body {
 
 h2 {
   color: var(--brand);
-  font-size: 36px;
+  font-size: 34px;
   margin-bottom: 30px;
 }
 
 h3 {
-  margin-top: 40px;
+  margin-top: 42px;
   color: var(--brand);
+  font-size: 24px;
 }
 
 h3 i {
@@ -72,7 +86,7 @@ h3 i {
 .card {
   background: #fff;
   border: 1px solid #ddd;
-  padding: 25px;
+  padding: 26px;
   border-radius: 6px;
   font-size: 18px;
   display: flex;
@@ -87,11 +101,11 @@ h3 i {
 
 /* Lists */
 ul {
-  padding-left: 22px;
+  padding-left: 24px;
 }
 
 li {
-  margin-bottom: 8px;
+  margin-bottom: 10px;
 }
 
 /* Footer */
@@ -99,8 +113,9 @@ li {
   background: #2b2b2b;
   color: #ccc;
   text-align: center;
-  padding: 30px 20px;
+  padding: 32px 20px;
   font-size: 14px;
+  font-family: 'Source Sans Pro', Arial, sans-serif;
 }
 
 /* Animation */
