@@ -1,0 +1,116 @@
+:root {
+  --brand: maroon;
+  --brand-dark: #5a0000;
+  --bg-alt: #f4f4f6;
+  --text: #222;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  color: var(--text);
+  line-height: 1.7;
+  background: #fff;
+}
+
+/* Hero with gradient */
+.hero {
+  height: 80vh;
+  background: linear-gradient(135deg, var(--brand), var(--brand-dark));
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+}
+
+.hero h1 {
+  font-size: 64px;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 22px;
+  max-width: 720px;
+}
+
+/* Sections */
+.section {
+  padding: 80px 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.section-alt {
+  background: var(--bg-alt);
+}
+
+h2 {
+  color: var(--brand);
+  font-size: 36px;
+  margin-bottom: 30px;
+}
+
+h3 {
+  margin-top: 40px;
+  color: var(--brand);
+}
+
+h3 i {
+  margin-right: 10px;
+}
+
+/* Grid */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
+}
+
+.card {
+  background: #fff;
+  border: 1px solid #ddd;
+  padding: 25px;
+  border-radius: 6px;
+  font-size: 18px;
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.card i {
+  color: var(--brand);
+  font-size: 22px;
+}
+
+/* Lists */
+ul {
+  padding-left: 22px;
+}
+
+li {
+  margin-bottom: 8px;
+}
+
+/* Footer */
+.footer {
+  background: #2b2b2b;
+  color: #ccc;
+  text-align: center;
+  padding: 30px 20px;
+  font-size: 14px;
+}
+
+/* Animation */
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.8s ease;
+}
+
+.reveal.show {
+  opacity: 1;
+  transform: translateY(0);
+}
